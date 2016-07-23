@@ -7,6 +7,7 @@ import {List, ListItem} from 'material-ui/List';
 import Subheader from 'material-ui/Subheader';
 import Divider from 'material-ui/Divider';
 import CommunicationChatBubble from 'material-ui/svg-icons/communication/chat-bubble';
+import Slider from 'material-ui/Slider'
 module.exports = React.createClass({
   getInitialState(){
     return {
@@ -81,6 +82,7 @@ module.exports = React.createClass({
             />
           </List>
       </div>
+      <Slider step={0.10} value={.5} />
     </div>
   }
 })
