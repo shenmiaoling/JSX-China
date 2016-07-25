@@ -57,9 +57,11 @@ module.exports = React.createClass({
                 targetOrigin={{horizontal: 'right', vertical: 'top'}}
                 anchorOrigin={{horizontal: 'right', vertical: 'top'}}
               >
-                <MenuItem primaryText="Refresh" />
-                <MenuItem primaryText="Help" />
-                <MenuItem primaryText="Sign out" />
+              <Link to='/login'>
+                <MenuItem primaryText="登录" />
+                <MenuItem primaryText="注册" />
+                <MenuItem primaryText="退出" />
+              </Link>
               </IconMenu>
             }
           />
